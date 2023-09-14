@@ -2,7 +2,7 @@
 
 ## About Me (a guessing game)
 
- A short guessing game to experiment with the input/output functions of Javascript, with a tad of styling from CSS. 
+ A short guessing game to experiment with the input/output functions of Javascript, with a tad of styling from CSS.
 
 ## Motivation
 
@@ -34,11 +34,11 @@ Not entirely sure what to put here.
 
 ## Installation
 
-Not entirely sure what to put here either. 
+Not entirely sure what to put here either.
 
 ## API Reference
 
-https://github.com/T-Ingram/aboutMe/tree/main
+![Reference](https://github.com/T-Ingram/aboutMe/tree/main)
 
 ## Tests
 
@@ -54,7 +54,7 @@ N/A
 
 ## Credits
 
-https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
+![Work Cited](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
 
 ## License
 
