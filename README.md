@@ -18,7 +18,7 @@ N/A
 
 ## Screen Shots
 
-![Lighthouse Score](/Users/Trevor Ingram/OneDrive/Pictures/lighthouseReport_allAboutMe.jpg)
+![Lighthouse Score](https://raw.githubusercontent.com/T-Ingram/aboutMe/main/lighthouseReport_allAboutMe.jpg)
 
 ## Tech/Framework Used
 
