@@ -79,19 +79,23 @@ function q4() {
 
 q4();
 
-let questionFive = prompt('Do I still work at Cascades East Transit?').toLowerCase();
+function q5() {
+  let questionFive = prompt('Do I still work at Cascades East Transit?').toLowerCase();
 
-if (questionFive ==='yes' || questionFive === 'y'){
-  //console.log('Wrong answer, try again' + userName);
-  alert('Wrong answer, try again ' + userName);
-} else if (questionFive === 'no' || questionFive === 'n'){
-  //console.log('You are correct!' + userName + ', great job!');
-  alert('You are correct! ' + userName + ', great job!');
-  correctAnswerTally++;
-} else {
-  //console.log('userName' + ', please answer with yes/no or y/n.');
-  alert(userName + ', please answer with yes/no or y/n.');
+  if (questionFive ==='yes' || questionFive === 'y'){
+    //console.log('Wrong answer, try again' + userName);
+    alert('Wrong answer, try again ' + userName);
+  } else if (questionFive === 'no' || questionFive === 'n'){
+    //console.log('You are correct!' + userName + ', great job!');
+    alert('You are correct! ' + userName + ', great job!');
+    correctAnswerTally++;
+  } else {
+    //console.log('userName' + ', please answer with yes/no or y/n.');
+    alert(userName + ', please answer with yes/no or y/n.');
+  }
 }
+
+q5();
 
 var correctAnswer = 3; 
 var attempts = 4;
