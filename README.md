@@ -59,3 +59,9 @@ N/A
 ## License
 
 (MIT)
+
+## Paired Programming
+
+**Driver -** Will Green
+
+**Navigator -** Trevor Ingram
