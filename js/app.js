@@ -43,19 +43,23 @@ function q2() {
 
 q2();
 
-let questionThree = prompt('Did I ever live in Florida?').toLowerCase();
+function q3() {
+  let questionThree = prompt('Did I ever live in Florida?').toLowerCase();
 
-if (questionThree ==='yes' || questionThree === 'y'){
-  //console.log('Wrong answer, try again.');
-  alert('Wrong answer, try again.');
-} else if (questionThree === 'no' || questionThree === 'n'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  correctAnswerTally++;
-} else {
-  //console.log('Please answer with yes/no or y/n.');
-  alert('Please answer with yes/no or y/n.');
+  if (questionThree ==='yes' || questionThree === 'y'){
+    //console.log('Wrong answer, try again.');
+    alert('Wrong answer, try again.');
+  } else if (questionThree === 'no' || questionThree === 'n'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    correctAnswerTally++;
+  } else {
+    //console.log('Please answer with yes/no or y/n.');
+    alert('Please answer with yes/no or y/n.');
+  }
 }
+
+q3();
 
 let questionFour = prompt('Did I attend college?').toLowerCase();
 
