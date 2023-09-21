@@ -25,19 +25,23 @@ function q1() {
 
 q1();
 
-let questionTwo = prompt('Did I grow up in Oregon?').toLowerCase();
+function q2() {
+  let questionTwo = prompt('Did I grow up in Oregon?').toLowerCase();
 
-if (questionTwo ==='yes' || questionTwo === 'y'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  correctAnswerTally++;
-} else if (questionTwo === 'no' || questionTwo === 'n'){
-  //console.log('Wrong answer, try again.');
-  alert('Wrong answer, try again.');
-} else {
-  //console.log('Please answer with yes/no or y/n.');
-  alert('Please answer with yes/no or y/n.');
+  if (questionTwo ==='yes' || questionTwo === 'y'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    correctAnswerTally++;
+  } else if (questionTwo === 'no' || questionTwo === 'n'){
+    //console.log('Wrong answer, try again.');
+    alert('Wrong answer, try again.');
+  } else {
+    //console.log('Please answer with yes/no or y/n.');
+    alert('Please answer with yes/no or y/n.');
+  }
 }
+
+q2();
 
 let questionThree = prompt('Did I ever live in Florida?').toLowerCase();
 
