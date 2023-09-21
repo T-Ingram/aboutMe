@@ -1,8 +1,8 @@
 'use strict';
 
-let userName = prompt ("Before we get started please tell me your name?");
+let userName = prompt ('Before we get started please tell me your name?');
 //console.log (userName);
-alert("Hello " + userName + ", let's get started.");
+alert('Hello ' + userName + ', let\'s get started.');
 //console.log ("Before we get started please tell me your name? Hello " + userName + ", let's get started.")
 
 let correctAnswerTally = 0;
@@ -23,8 +23,6 @@ function q1() {
   }
 }
 
-q1();
-
 function q2() {
   let questionTwo = prompt('Did I grow up in Oregon?').toLowerCase();
 
@@ -40,8 +38,6 @@ function q2() {
     alert('Please answer with yes/no or y/n.');
   }
 }
-
-q2();
 
 function q3() {
   let questionThree = prompt('Did I ever live in Florida?').toLowerCase();
@@ -59,8 +55,6 @@ function q3() {
   }
 }
 
-q3();
-
 function q4() {
   let questionFour = prompt('Did I attend college?').toLowerCase();
 
@@ -76,8 +70,6 @@ function q4() {
     alert('Please answer with yes/no or y/n.');
   }
 }
-
-q4();
 
 function q5() {
   let questionFive = prompt('Do I still work at Cascades East Transit?').toLowerCase();
@@ -95,20 +87,18 @@ function q5() {
   }
 }
 
-q5();
-
 function q6() {
-  const correctAnswer = 3; 
+  const correctAnswer = 3;
   const attempts = 4;
 
   for (let i = 1; i <= attempts; i++) {
-    let guess = parseInt(prompt("How many states have I lived in? (Attempt " + i + "/" + attempts + ")"));
+    let guess = parseInt(prompt('How many states have I lived in? (Attempt ' + i + '/' + attempts + ')'));
 
     if (guess === correctAnswer) {
       //console.log('Congratulations! That's correct.')
       alert('Congratulations! That\'s correct.');
       correctAnswerTally++;
-      break; 
+      break;
     } else if (guess < correctAnswer) {
       //console.log('Too low. Try again.')
       alert('Too low. Try again.');
@@ -124,38 +114,45 @@ function q6() {
   }
 }
 
-q6();
+function q7() {
+  const correctStates = ['Oregon', 'Kansas', 'Texas'];
+  let attempts = 6;
 
-var correctStates = ["Oregon", "Kansas", "Texas"];
-var attempts = 6;
+  let correctGuess = false;
 
-var correctGuess = false;
+  while (attempts > 0 && !correctGuess) {
+    let userGuess = prompt('Name one of the three states I\'ve lived in (' + attempts + ' attempts remaining):').toLowerCase();
 
-while (attempts > 0 && !correctGuess) {
-  var userGuess = prompt("Name one of the three states I've lived in (" + attempts + " attempts remaining):").toLowerCase();
-
-  for (var i = 0; i < correctStates.length; i++) {
-    if (userGuess === correctStates[i].toLowerCase()) {
-      //console.log('Correct! I've lived in ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.')
-      alert('Correct! I\'ve lived in ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.');
-      correctAnswerTally++;
-      correctGuess = true;
-      break;
+    for (let i = 0; i < correctStates.length; i++) {
+      if (userGuess === correctStates[i].toLowerCase()) {
+        //console.log('Correct! I've lived in ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.')
+        alert('Correct! I\'ve lived in ' + correctStates[0] + ', ' + correctStates[1] + ', and ' + correctStates[2] + '.');
+        correctAnswerTally++;
+        correctGuess = true;
+        break;
+      }
     }
-  }
 
-  if (!correctGuess) {
-    attempts--;
-    if (attempts > 0) {
-      //console.log('Incorrect. Try again.')
-      alert('Incorrect. Try again.');
-    } else {
-      //console.log('Sorry, you've run out of attempts. The correct states are ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.')
-      alert('Sorry, you\'ve run out of attempts. The correct states are ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.');
+    if (!correctGuess) {
+      attempts--;
+      if (attempts > 0) {
+        //console.log('Incorrect. Try again.')
+        alert('Incorrect. Try again.');
+      } else {
+        //console.log('Sorry, you've run out of attempts. The correct states are ' + correctStates[0] + ", " + correctStates[1] + ', and ' + correctStates[2] + '.')
+        alert('Sorry, you\'ve run out of attempts. The correct states are ' + correctStates[0] + ', ' + correctStates[1] + ', and ' + correctStates[2] + '.');
+      }
     }
   }
 }
+
+q1();
+q2();
+q3();
+q4();
+q5();
+q6();
+q7();
+
 //console.log(userName + ', you got ' + correctAnswerTally + ' out of 7 questions correct!')
-alert(userName + ', you got ' + correctAnswerTally + ' out of 7 questions correct!')
-
-
+alert(userName + ', you got ' + correctAnswerTally + ' out of 7 questions correct!');
