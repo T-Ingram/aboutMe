@@ -61,19 +61,23 @@ function q3() {
 
 q3();
 
-let questionFour = prompt('Did I attend college?').toLowerCase();
+function q4() {
+  let questionFour = prompt('Did I attend college?').toLowerCase();
 
-if (questionFour ==='yes' || questionFour === 'y'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  correctAnswerTally++;
-} else if (questionFour === 'no' || questionFour === 'n'){
-  //console.log('Wrong answer, try again.');
-  alert('Wrong answer, try again.');
-} else {
-  //console.log('Please answer with yes/no or y/n.');
-  alert('Please answer with yes/no or y/n.');
+  if (questionFour ==='yes' || questionFour === 'y'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    correctAnswerTally++;
+  } else if (questionFour === 'no' || questionFour === 'n'){
+    //console.log('Wrong answer, try again.');
+    alert('Wrong answer, try again.');
+  } else {
+    //console.log('Please answer with yes/no or y/n.');
+    alert('Please answer with yes/no or y/n.');
+  }
 }
+
+q4();
 
 let questionFive = prompt('Do I still work at Cascades East Transit?').toLowerCase();
 
