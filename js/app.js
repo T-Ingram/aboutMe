@@ -7,19 +7,23 @@ alert("Hello " + userName + ", let's get started.");
 
 let correctAnswerTally = 0;
 
-let questionOne = prompt('Is my name Trevor Ingram?').toLowerCase();
+function q1() {
+  let questionOne = prompt('Is my name Trevor Ingram?').toLowerCase();
 
-if (questionOne ==='yes' || questionOne === 'y'){
-  //console.log('You are correct!');
-  alert('You are correct!');
-  correctAnswerTally++;
-} else if (questionOne === 'no' || questionOne === 'n'){
+  if (questionOne ==='yes' || questionOne === 'y'){
+    //console.log('You are correct!');
+    alert('You are correct!');
+    correctAnswerTally++;
+  } else if (questionOne === 'no' || questionOne === 'n'){
     //console.log('Wrong answer, try again.');
     alert('Wrong answer, try again.');
-} else {
+  } else {
     //console.log('Please answer with yes/no or y/n.');
     alert('Please answer with yes/no or y/n.');
+  }
 }
+
+q1();
 
 let questionTwo = prompt('Did I grow up in Oregon?').toLowerCase();
 
@@ -28,11 +32,11 @@ if (questionTwo ==='yes' || questionTwo === 'y'){
   alert('You are correct!');
   correctAnswerTally++;
 } else if (questionTwo === 'no' || questionTwo === 'n'){
-    //console.log('Wrong answer, try again.');
-    alert('Wrong answer, try again.');
+  //console.log('Wrong answer, try again.');
+  alert('Wrong answer, try again.');
 } else {
-    //console.log('Please answer with yes/no or y/n.');
-    alert('Please answer with yes/no or y/n.');
+  //console.log('Please answer with yes/no or y/n.');
+  alert('Please answer with yes/no or y/n.');
 }
 
 let questionThree = prompt('Did I ever live in Florida?').toLowerCase();
@@ -41,12 +45,12 @@ if (questionThree ==='yes' || questionThree === 'y'){
   //console.log('Wrong answer, try again.');
   alert('Wrong answer, try again.');
 } else if (questionThree === 'no' || questionThree === 'n'){
-    //console.log('You are correct!');
-    alert('You are correct!');
-    correctAnswerTally++;
+  //console.log('You are correct!');
+  alert('You are correct!');
+  correctAnswerTally++;
 } else {
-    //console.log('Please answer with yes/no or y/n.');
-    alert('Please answer with yes/no or y/n.');
+  //console.log('Please answer with yes/no or y/n.');
+  alert('Please answer with yes/no or y/n.');
 }
 
 let questionFour = prompt('Did I attend college?').toLowerCase();
@@ -56,11 +60,11 @@ if (questionFour ==='yes' || questionFour === 'y'){
   alert('You are correct!');
   correctAnswerTally++;
 } else if (questionFour === 'no' || questionFour === 'n'){
-    //console.log('Wrong answer, try again.');
-    alert('Wrong answer, try again.');
+  //console.log('Wrong answer, try again.');
+  alert('Wrong answer, try again.');
 } else {
-    //console.log('Please answer with yes/no or y/n.');
-    alert('Please answer with yes/no or y/n.');
+  //console.log('Please answer with yes/no or y/n.');
+  alert('Please answer with yes/no or y/n.');
 }
 
 let questionFive = prompt('Do I still work at Cascades East Transit?').toLowerCase();
@@ -69,12 +73,12 @@ if (questionFive ==='yes' || questionFive === 'y'){
   //console.log('Wrong answer, try again' + userName);
   alert('Wrong answer, try again ' + userName);
 } else if (questionFive === 'no' || questionFive === 'n'){
-    //console.log('You are correct!' + userName + ', great job!');
-    alert('You are correct! ' + userName + ', great job!');
-    correctAnswerTally++;
+  //console.log('You are correct!' + userName + ', great job!');
+  alert('You are correct! ' + userName + ', great job!');
+  correctAnswerTally++;
 } else {
-    //console.log('userName' + ', please answer with yes/no or y/n.');
-    alert(userName + ', please answer with yes/no or y/n.');
+  //console.log('userName' + ', please answer with yes/no or y/n.');
+  alert(userName + ', please answer with yes/no or y/n.');
 }
 
 var correctAnswer = 3; 
