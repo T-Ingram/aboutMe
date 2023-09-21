@@ -97,30 +97,34 @@ function q5() {
 
 q5();
 
-var correctAnswer = 3; 
-var attempts = 4;
+function q6() {
+  const correctAnswer = 3; 
+  const attempts = 4;
 
-for (var i = 1; i <= attempts; i++) {
-  var guess = parseInt(prompt("How many states have I lived in? (Attempt " + i + "/" + attempts + ")"));
+  for (let i = 1; i <= attempts; i++) {
+    let guess = parseInt(prompt("How many states have I lived in? (Attempt " + i + "/" + attempts + ")"));
 
-  if (guess === correctAnswer) {
-    //console.log('Congratulations! That's correct.')
-    alert('Congratulations! That\'s correct.');
-    correctAnswerTally++;
-    break; 
-  } else if (guess < correctAnswer) {
-    //console.log('Too low. Try again.')
-    alert('Too low. Try again.');
-  } else {
-    //console.log('Too high. Try again.')
-    alert('Too high. Try again.');
-  }
+    if (guess === correctAnswer) {
+      //console.log('Congratulations! That's correct.')
+      alert('Congratulations! That\'s correct.');
+      correctAnswerTally++;
+      break; 
+    } else if (guess < correctAnswer) {
+      //console.log('Too low. Try again.')
+      alert('Too low. Try again.');
+    } else {
+      //console.log('Too high. Try again.')
+      alert('Too high. Try again.');
+    }
 
-  if (i === attempts) {
-    //console.log('Sorry, you've used all your attempts. The correct answer is ' + correctAnswer + ' states.')
-    alert('Sorry, you\'ve used all your attempts. The correct answer is ' + correctAnswer + ' states.');
+    if (i === attempts) {
+      //console.log('Sorry, you've used all your attempts. The correct answer is ' + correctAnswer + ' states.')
+      alert('Sorry, you\'ve used all your attempts. The correct answer is ' + correctAnswer + ' states.');
+    }
   }
 }
+
+q6();
 
 var correctStates = ["Oregon", "Kansas", "Texas"];
 var attempts = 6;
