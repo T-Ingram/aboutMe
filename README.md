@@ -38,7 +38,7 @@ Not entirely sure what to put here either.
 
 ## API Reference
 
-![Reference](https://github.com/T-Ingram/aboutMe/tree/main)
+[Reference](https://github.com/T-Ingram/aboutMe/tree/main)
 
 ## Tests
 
@@ -54,7 +54,7 @@ N/A
 
 ## Credits
 
-![Work Cited](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
+[Work Cited](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
 
 ## License
 
