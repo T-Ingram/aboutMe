@@ -18,7 +18,7 @@ N/A
 
 ## Screen Shots
 
-![Lighthouse Score](https://github.com/T-Ingram/aboutMe/blob/main/img/lighthouseReport_allAboutMe.jpg?raw=true)
+![Lighthouse Score](https://github.com/T-Ingram/aboutMe/blob/main/img/lighthouseReport_allAboutMe2.jpg)
 
 ## Tech/Framework Used
 
